@@ -11,7 +11,7 @@ class PredictionSchema(BaseModel):
 
 
 app = FastAPI(title="Prediccion del cancer de prostata")
-predictor = Predictor("breeds.txt", "modelo_vgg16.h5", 150)
+predictor = Predictor("breeds.txt", "modelo_vgg16.h5", 512)
 
 
 @app.get("/")
